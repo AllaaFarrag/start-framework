@@ -1,0 +1,40 @@
+<div class="protfolio">
+  <div class="info text-center py-5">
+    <h1>PORTFOLIO COMPONENT</h1>
+    <div class="line-with-star">
+      <span class="line"></span>
+      <i class="fa fa-star"></i>
+      <span class="line"></span>
+    </div>
+  </div>
+
+  <div class="content m-4">
+    <div class="container">
+      <div class="row g-4">
+        
+        @for (image of images; track $index) {
+            <div class="col-lg-4 col-md-6 photo rounded-4">
+              <img
+                [src]="image"
+                class="w-100 clickable-image rounded-4"
+                alt="Portfolio Image"
+                (click)="showImage(image)"
+              />
+              <div class="photo-content text-center">
+                <i class="fa-solid fa-plus fa-6x"></i>
+              </div>
+            </div>
+          }
+
+        <div class="modal">
+          @if (isModalOpen) {
+            <div class="modal-content">
+              <span (click)="isModalOpen = false" class="close">&times;</span>
+              <img [src]="currentImage" alt="Current Image" />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

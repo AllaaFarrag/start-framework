@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/start-framework": {},
+    "/start-framework/about": {},
+    "/start-framework/contact": {},
+    "/start-framework/home": {},
+    "/start-framework/protfolio": {}
+  }
+}

@@ -1,0 +1,25 @@
+.about{
+    background-color: #1abc9c;
+    height: 100vh;
+}
+
+
+.line-with-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .line {
+    display: block;
+    height: 2px;
+    width: 50px; 
+    background-color: #ffffff; 
+    margin: 0 10px; 
+  }
+  
+  .line-with-star i {
+    font-size: 16px; 
+    color: #ffffff; 
+  }
